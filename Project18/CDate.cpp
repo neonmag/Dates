@@ -161,6 +161,36 @@ int CDate::operator -(CDate b)
 	return sum;
 }
 
+void CDate::SetDay(const int day)
+{
+	this->day = day;
+}
+
+void CDate::SetMonth(const int month)
+{
+	this->month = month;
+}
+
+void CDate::SetYear(const int year)
+{
+	this->year = year;
+}
+
+int CDate::GetDay()
+{
+	return this->day;
+}
+
+int CDate::GetMonth()
+{
+	return this->month;
+}
+
+int CDate::GetYear()
+{
+	return this->year;
+}
+
 CDate CDate::operator+(int a)
 {
 	CDate c;
